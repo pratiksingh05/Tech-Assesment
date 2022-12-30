@@ -11,7 +11,7 @@ resource "aws_internet_gateway" "demogateway" {
   vpc_id = "${aws_vpc.vpc_id.id}"
 }
 
-# Creating Route Table
+# Route Table
 resource "aws_route_table" "route" {
     vpc_id = "${aws_vpc.vpc_id.id}"
 route {
