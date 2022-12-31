@@ -6,7 +6,7 @@ def extractValue(objj,keyy):
         for i in vall.keys():
             if keyy:
                 key_i = keyy+"_"+i
-            extractValue(vall[i],key_i)
+            extractValue(vall[i],key_i) #recursively check dict object and get the exact value
     if(type(vall)!=dict):
         print("Output of nested json object - ", vall)
    
